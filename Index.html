@@ -1,0 +1,129 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="MyCss.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">EasyPay</a>
+			</div>
+		</div><!-- /.container-fluid -->
+    </nav>
+	<div id="Box">
+		<form data-toggle="validator" id="formid">
+			<div id="leftside">
+				<div class="form-group">
+			    	<label >Nafn: *</label>
+			    	<input type="text" id="Name" class="form-control" placeholder="Jón Jónsson" required>
+			  	</div>
+				<div class="form-group">
+			    	<label >Kennitala: *</label>
+			    	<input type="text" class="form-control" placeholder="Sláðu inn kennitölu" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label >Heimilisfang: *</label>
+			    	<input type="text" class="form-control" placeholder="Litlagerði 5" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label >Staður: *</label>
+			    	<input type="text" class="form-control" placeholder="101">
+			    	<input type="text" class="form-control" placeholder="Reykjavík" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label >Sími: *</label>
+			    	<input type="tel" class="form-control" placeholder="+354 899 9999" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label >Heimasími: </label>
+			    	<input type="tel" class="form-control" placeholder="+354 555 1234">
+			  	</div>
+			  	<div class="form-group">
+			    	<label >Tegund verslunar/þjónustu: *</label>
+			    	<input type="text" class="form-control" placeholder="" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label >Nákvæm lýsing á þjónstu/verslun: *</label>
+			    	<textarea class="form-control" rows="5" required></textarea>
+			  	</div>
+			  	
+			</div>
+
+			 <div id="rightside">
+			 	<div class="form-group">
+			    	<label >Netfang: *</label>
+			    	<input type="email" id="email" class="form-control" placeholder="jonjon@gmail.com" required>
+			  	</div>
+				<label>Tegund þjónustu: *</label>
+				<div class="dropdown">
+				    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tegund Notenda
+				    <span class="caret"></span></button>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fjáröflun</a></li>
+				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Einn aðgangur í skammtíma</a></li>
+				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Einn aðgangur í langtíma</a></li>
+				      <li role="presentation" class="divider"></li>
+				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Margir aðgangar skammtíma</a></li>
+				    </ul>
+				 </div>
+				 <label>Fjöldi aðgangskóða:</label>
+				 <div>
+				 	<input type="number" id="numberOfAccessCode" placeholder="Sláðu inn fjölda aðgangskóða" required>
+				 </div>
+				 <label>Virkjunartími:</label>
+				 <div>
+				 	<p>Frá: *   <input type="text" id="From" class="datepicker" placeholder="Veldu dagsetningu" required></p>
+				 </div>
+				 <div>
+				 	<p>Til: *  <input type="text" id="To" class="datepicker" placeholder="Veldu dagsetningu"	 required></p>
+				 </div>
+				 <label>Viðtaka á aðgangskóða: *</label>
+				 <div class="checkbox">
+			      	<label><input type="checkbox" required>sms</label>
+			      	<label><input type="checkbox" >email</label>
+			    </div>
+
+			    <div class="form-group">
+			    	<label>Veita Kreditkorta leggist inn á: *</label>
+			    	<input type="text" class="form-control" placeholder="" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label>Veita debetkorta leggist inn á: *</label>
+			    	<input type="text" class="form-control" placeholder="" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label>Kennitala prókúruhafa í fyrirtækjaskrá: *</label>
+			    	<input type="text" class="form-control" placeholder="" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label>Gsm prókúruhafa: *</label>
+			    	<input type="text" class="form-control" placeholder="" required>
+			  	</div>
+			  	<div class="form-group">
+			    	<label>Netfang prókúruhafa: *</label>
+			    	<input type="email" id="email2" class="form-control" placeholder="fyritæki@fyritæki.is" required>
+			  	</div>
+				<button type="submit" id="SubmitButton" class="btn btn-default">Senda</button>
+			</div>
+		</form>
+	</div>
+	<div id="footer">
+	</div>  
+</body>
+</html>

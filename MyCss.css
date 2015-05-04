@@ -1,0 +1,28 @@
+#Box{
+	margin: 5%;
+	
+}
+
+body{
+	background-image: url("pic2.jpg");
+}
+
+#footer{
+	margin-right: 30%;
+	margin-bottom: 10%;
+}
+
+#formid{
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+
+#leftside{
+	margin-right: 5%;
+	float: left;
+
+}
+
+#rightside{
+	float: left;
+}
