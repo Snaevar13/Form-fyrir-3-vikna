@@ -6,8 +6,10 @@ $(document).ready(
       changeMonth: true,
       changeYear: true 
     });
+
+    $(".SubmitMessage").hide();
   }
- 
+  
   
 );
 
@@ -24,6 +26,7 @@ $(function() {
 			}
 			return result;
 		}
+
 		var name = $("#Name").val();
 		var numberOfAccessCode = $("#numberOfAccessCode").val();
 		var From = $("#From").val();
@@ -40,6 +43,10 @@ $(function() {
 	    			 numberOfAccessCode + " aðgangskóðar sem duga frá " + From + " og til " + To + ":</p>" 
 	    			 +  rString;
 	    console.log(string);
+
+	    $("#AppendMessage").append(email);
+		$(".SubmitMessage").show();
+		$("#SubmitButton").hide();
 
 		console.log("Email has been sent");
 		$.ajax({

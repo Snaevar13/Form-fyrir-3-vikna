@@ -3,6 +3,11 @@
 	
 }
 
+#GreenText{
+	font-size: 20;
+	color: #33CC00;
+}
+
 body{
 	background-image: url("pic2.jpg");
 }
