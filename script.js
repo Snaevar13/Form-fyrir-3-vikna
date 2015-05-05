@@ -2,11 +2,10 @@ $(document).ready(
   
   /* This is the function that will get executed after the DOM is fully loaded */
   function () {
-    $( ".datepicker" ).datepicker({
-      changeMonth: true,
-      changeYear: true 
+    $(function() {
+       $("#From").datepicker({ dateFormat: "dd.mm.yy" }).val()
+       $("#To").datepicker({ dateFormat: "dd.mm.yy" }).val()
     });
-
     $(".SubmitMessage").hide();
   }
   
@@ -39,14 +38,17 @@ $(function() {
 		console.log(numberOfAccessCode);
 		console.log(From);
 		console.log(To);
-	    var string = "<p>Sæl(l) " + name + ".</p>" + "<p>Velkomin(n) í hóp viðskiptavina EasyPay.</p> <p>Hér eru þínir " + 
-	    			 numberOfAccessCode + " aðgangskóðar sem duga frá " + From + " og til " + To + ":</p>" 
-	    			 +  rString;
+	    var string = "<p>Sæl(l) " + name + ".</p>" 
+	    		     + "<p>Velkomin(n) í hóp viðskiptavina EasyPay.</p> <p>Hér eru þínir " + 
+	    			 numberOfAccessCode + " aðgangskóðar sem gilda frá " + From + ", 00:00 og til " 
+	    			 + To + ", 24:00</p>" +  rString;
 	    console.log(string);
 
+	    event.preventDefault();
 	    $("#AppendMessage").append(email);
+	    $("#SubmitButton").hide();
 		$(".SubmitMessage").show();
-		$("#SubmitButton").hide();
+		
 
 		console.log("Email has been sent");
 		$.ajax({
