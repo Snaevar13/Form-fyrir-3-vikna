@@ -23,110 +23,128 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">EasyPay</a>
+				<a href=""> </a>
 			</div>
 		</div><!-- /.container-fluid -->
     </nav>
 	<div id="Box">
 		<form data-toggle="validator" id="formid">
-			<div id="leftside">
-				<div class="form-group">
-			    	<label >Nafn: *</label>
-			    	<input type="text" id="Name" class="form-control" placeholder="Jón Jónsson" >
-			  	</div>
-				<div class="form-group">
-			    	<label >Kennitala: *</label>
-			    	<input type="text" class="form-control" placeholder="Sláðu inn kennitölu" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label >Heimilisfang: *</label>
-			    	<input type="text" class="form-control" placeholder="Litlagerði 5" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label >Staður: *</label>
-			    	<input type="text" class="form-control" placeholder="101">
-			    	<input type="text" class="form-control" placeholder="Reykjavík" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label >Sími: *</label>
-			    	<input type="tel" class="form-control" placeholder="+354 899 9999" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label >Heimasími: </label>
-			    	<input type="tel" class="form-control" placeholder="+354 555 1234">
-			  	</div>
-			  	<div class="form-group">
-			    	<label >Tegund verslunar/þjónustu: *</label>
-			    	<input type="text" class="form-control" placeholder="" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label >Nákvæm lýsing á þjónstu/verslun: *</label>
-			    	<textarea class="form-control" rows="5" ></textarea>
-			  	</div>
-			  	
-			</div>
-
-			 <div id="rightside">
-			 	<div class="form-group">
-			    	<label >Netfang: *</label>
-			    	<input type="email" id="email" class="form-control" placeholder="jonjon@gmail.com" >
-			  	</div>
-				<label>Tegund þjónustu: *</label>
-				<div class="dropdown">
-				    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tegund Notenda
-				    <span class="caret"></span></button>
-				    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fjáröflun</a></li>
-				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Einn aðgangur í skammtíma</a></li>
-				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Einn aðgangur í langtíma</a></li>
-				      <li role="presentation" class="divider"></li>
-				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Margir aðgangar skammtíma</a></li>
-				    </ul>
-				 </div>
-				 <label>Fjöldi aðgangskóða:</label>
-				 <div>
-				 	<input type="number" id="numberOfAccessCode" placeholder="Sláðu inn fjölda aðgangskóða" >
-				 </div>
-				 <label>Virkjunartími:</label>
-				 <div>
-				 	<p>Frá: *   <input type="text" id="From" class="datepicker" placeholder="Veldu dagsetningu" ></p>
-				 </div>
-				 <div>
-				 	<p>Til: *  <input type="text" id="To" class="datepicker" placeholder="Veldu dagsetningu"	 ></p>
-				 </div>
-				 <label>Viðtaka á aðgangskóða: *</label>
-				 <div class="checkbox">
-			      	<label><input type="checkbox" >sms</label>
-			      	<label><input type="checkbox" >email</label>
-			    </div>
-
-			    <div class="form-group">
-			    	<label>Veita Kreditkorta leggist inn á: *</label>
-			    	<input type="text" class="form-control" placeholder="" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label>Veita debetkorta leggist inn á: *</label>
-			    	<input type="text" class="form-control" placeholder="" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label>Kennitala prókúruhafa í fyrirtækjaskrá: *</label>
-			    	<input type="text" class="form-control" placeholder="" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label>Gsm prókúruhafa: *</label>
-			    	<input type="text" class="form-control" placeholder="" >
-			  	</div>
-			  	<div class="form-group">
-			    	<label>Netfang prókúruhafa: *</label>
-			    	<input type="email" id="email2" class="form-control" placeholder="fyritæki@fyritæki.is" >
-			  	</div>
-			  	<div>
-					<button type="submit" id="SubmitButton" class="btn btn-success btn-lg">Senda</button>
-					<p class="SubmitMessage" id="GreenText"> Umsókn þín hefur verið móttekin. </p>
-					<p id="AppendMessage" class="SubmitMessage"> Aðgangskóðar hafa verið sendir á </p>
+			<h2  class="SectionFont"> Persónuupplýsingar </h2>
+			<div id="personalInfo">
+				<div class="leftSide">
+					<div class="form-group">
+				    	<label  >Nafn: *</label>
+				    	<input type="text" id="Name" class="form-control" placeholder="Jón Jónsson" >
+				  	</div>
+					<div class="form-group">
+				    	<label  >Kennitala: *</label>
+				    	<input type="text" class="form-control" placeholder="Sláðu inn kennitölu" >
+				  	</div>
+				  	<div class="form-group">
+				    	<label  >Heimilisfang: *</label>
+				    	<input type="text" class="form-control" placeholder="Litlagerði 5" >
+				  	</div>
+				  	<div class="form-group">
+				    	<label  >Staður: *</label>
+				    	<input type="text" class="form-control" placeholder="101">
+				    	<input type="text" class="form-control" placeholder="Reykjavík" >
+				  	</div>
 				</div>
+				<div class="rightSide">
+				  	<div class="form-group">
+				    	<label  >Sími: *</label>
+				    	<input type="tel" class="form-control" placeholder="+354 899 9999" >
+				  	</div>
+				  	<div class="form-group">
+				    	<label  >Heimasími: </label>
+				    	<input type="tel" class="form-control" placeholder="+354 555 1234">
+				  	</div>
+				  	<div class="form-group">
+				    	<label  >Vinnusimi: *</label>
+				    	<input type="tel" class="form-control" placeholder="+354 888 4444" >
+				  	</div>
+				  	<div class="form-group">
+				    	<label  >Netfang: *</label>
+				    	<input type="email" id="email" class="form-control" placeholder="jonjon@gmail.com" >
+				  	</div>
+				</div>
+			</div>
+			<h2  class="SectionFont"> Þjónustuval </h2>
+			<div id="businessInfo">
+				<div class="leftSide">
+				  	<div class="form-group">
+				    	<label  >Tegund verslunar/þjónustu: *</label>
+				    	<input type="text" class="form-control" placeholder="" >
+				  	</div>
+				  	<div id="theTextarea" class="form-group">
+				    	<label  >Nákvæm lýsing á þjónstu/verslun: *</label>
+				    	<textarea class="form-control" rows="5" ></textarea>
+				  	</div>
+				  	<!--	 	
+					<label >Tegund þjónustu: *</label>
+					<div class="dropdown">
+					    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tegund Notenda
+					    <span class="caret"></span></button>
+					    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fjáröflun</a></li>
+					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Einn aðgangur í skammtíma</a></li>
+					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Einn aðgangur í langtíma</a></li>
+					      <li role="presentation" class="divider"></li>
+					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Margir aðgangar skammtíma</a></li>
+					    </ul>
+					 </div> -->
+					 <label >Fjöldi aðgangskóða:</label>
+					 <div id="nrAccesscode">
+					 	<input type="number" id="numberOfAccessCode" placeholder="Sláðu inn fjölda aðgangskóða" >
+					 </div>
+					 <label >Virkjunartími:</label>
+					 <div>
+					 	<p >Frá: *   <input type="text" id="From" class="datepicker" placeholder="Veldu dagsetningu"></p>
+					 </div>
+					 <div>
+					 	<p >Til: *  <input type="text" id="To" class="datepicker" placeholder="Veldu dagsetningu"></p>
+					 </div>				
+				</div>
+				<div class="rightSide">
+					<label >Viðtaka á aðgangskóða: *</label>
+					 <div class="checkbox">
+				      	<label ><input type="checkbox" >sms</label>
+				      	<label ><input type="checkbox" >email</label>
+				    </div>
+				    <div class="form-group">
+				    	<label >Veita Kreditkorta leggist inn á: *</label>
+				    	<input type="text" class="form-control" placeholder="" >
+				  	</div>
+				  	<div class="form-group">
+				    	<label >Veita debetkorta leggist inn á: *</label>
+				    	<input type="text" class="form-control" placeholder="" >
+				  	</div>
+				  	<div class="form-group">
+				    	<label >Kennitala prókúruhafa í fyrirtækjaskrá: *</label>
+				    	<input type="text" class="form-control" placeholder="" >
+				  	</div>
+				  	<div class="form-group">
+				    	<label >Gsm prókúruhafa: *</label>
+				    	<input type="text" class="form-control" placeholder="" >
+				  	</div>
+				  	<div class="form-group">
+				    	<label >Netfang prókúruhafa: *</label>
+				    	<input type="email" id="email2" class="form-control" placeholder="fyritæki@fyritæki.is" >
+				  	</div>
+				</div>
+			</div>
+			<div>
+				<button type="submit" id="SubmitButton" class="btn btn-success btn-lg">Senda</button>
+				<p  class="SubmitMessage" id="GreenText"> Umsókn þín hefur verið móttekin. </p>
+				<p  id="AppendMessage" class="SubmitMessage"> Aðgangskóðar hafa verið sendir á </p>
 			</div>
 		</form>
 	</div>
-	<div id="theFooter">Footer</div> 
+	<div id="theFooter">
+		<div id="footerContent"> 
+			<p class="footerText"> © 2015 SmartDevel </p>
+			<p class="footerText">Hamraborg 10 | 474-4440 | smartdevel@smartdevel.is</p>
+		</div>
+	</div>  
 </body>
 </html>
