@@ -13,7 +13,7 @@ h2 {
 
 #theFooter {
 	display:inline-block;
-	border-top: 5px solid #395A18;
+	border-top: 5px solid #0E194E;
 	width: 100%;
 	height: 25%;
 }
@@ -26,11 +26,12 @@ h2 {
 
 #GreenText{
 	font-size: 20;
-	color: #33CC00;
+	color: #0E194E;
 }
 
 body{
-	background-image: url("cubes2.jpg");
+	background-image: url("bbackground.jpg");
+	background-size: 1300px 2000px;
 }
 
 .footerText {
@@ -57,13 +58,14 @@ body{
     padding:10px;
     font-family: Georgia;
     font-weight: bold;
-    border-bottom-color: #395A18;
+    border-bottom-color: #0E194E;
     border-bottom-width: 2px;
     border-bottom-style: inset;
 }
 
 .title {
 	margin-left: 80px;
+	color: #0E194E;
 }
 
 #sdlogo {
@@ -88,7 +90,7 @@ body{
    padding: .3em .4em .3em .4em; 
    text-decoration: none; 
    font-size: 20px; 
-   color: #004415; 
+   color: #0E194E; 
    font-family: Georgia;
 
 }
@@ -114,7 +116,7 @@ body{
 	background-image: url("nav.jpg");
     width: 100%; 
     text-align: center; 
-    border-bottom-color: #395A18;
+    border-bottom-color: #0E194E;
     border-bottom-width: 2px;
     border-bottom-style: inset;
 }
@@ -144,7 +146,7 @@ body{
 	color: #000000;
 	opacity: 0.75;
 	border-radius: 10px;
-    border-color: #395A18;
+    border-color: #0E194E;
     border-width: 2px;
     border-style: ridge;
 }
@@ -164,7 +166,7 @@ body{
 	margin-right: 25%;
 	border-radius: 25px;
 	padding: 20px;
-    border: 2px solid #395A18;
+    border: 2px solid #0E194E;
     margin-bottom: 2%;
 }
 
@@ -175,7 +177,7 @@ body{
 	margin-right: 25%;
 	border-radius: 25px;
 	padding: 20px;
-	border: 2px solid #395A18;
+	border: 2px solid #0E194E;
 	margin-bottom: 2%;
 }
 
