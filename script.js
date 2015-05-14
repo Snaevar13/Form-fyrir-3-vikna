@@ -7,12 +7,14 @@ $(document).ready(
        $("#To").datepicker({ dateFormat: "dd.mm.yy" }).val()
     });
     $(".SubmitMessage").hide();
+    $(".LoginReplacement").hide();
   }
-  
+ 
   
 );
 
 $(function() { 
+
 	$("#SubmitButton").on("click", function() {
 		function randomString(length, chars, numberOfAccessCode) {
 			var result = '';
@@ -76,5 +78,10 @@ $(function() {
 		    }
 		  }
 		 })
+	})
+	$(".Login").on("click", function() {
+			console.log("hell123123o");
+			 $(".Login").hide();
+			 $(".LoginReplacement").show();
 	})
 });

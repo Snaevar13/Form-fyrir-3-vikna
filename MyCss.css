@@ -7,6 +7,8 @@ h2 {
 	font-size: 22px;
 }
 
+
+
 #SubmitButton{
 	margin-bottom: 1.4%
 }
@@ -69,7 +71,6 @@ body{
 #sdlogo {
 	height: 90px;
 	width: 75px;
-	position: absolute;
 	display: inline;
 	border-radius: 40px;
 	float: left;
