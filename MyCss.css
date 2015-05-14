@@ -13,7 +13,7 @@ h2 {
 
 #theFooter {
 	display:inline-block;
-	border-top: 5px solid #37a829;
+	border-top: 5px solid #395A18;
 	width: 100%;
 	height: 25%;
 }
@@ -30,7 +30,7 @@ h2 {
 }
 
 body{
-	background-image: url("testbackground2.jpg");
+	background-image: url("cubes2.jpg");
 }
 
 .footerText {
@@ -51,7 +51,7 @@ body{
 }
 
 #header {
-	background-image: url("nav.jpg");
+	background-image: url("nav2.jpg");
     color: #004415; 
     font-size: 120px;
     padding:10px;
@@ -111,7 +111,7 @@ body{
 #navbar {
 	margin: 0; 
 	padding: 15px 0px 15px 0px; 
-	background-image: url("nav2.jpg");
+	background-image: url("nav.jpg");
     width: 100%; 
     text-align: center; 
     border-bottom-color: #395A18;
@@ -164,7 +164,7 @@ body{
 	margin-right: 25%;
 	border-radius: 25px;
 	padding: 20px;
-    border: 2px solid #37a829;
+    border: 2px solid #395A18;
     margin-bottom: 2%;
 }
 
@@ -175,7 +175,7 @@ body{
 	margin-right: 25%;
 	border-radius: 25px;
 	padding: 20px;
-	border: 2px solid #37a829;
+	border: 2px solid #395A18;
 	margin-bottom: 2%;
 }
 
