@@ -1,13 +1,24 @@
+var is_it_true = false;
+var username = "";
+console.log("hello world");
 $(document).ready(
   
   /* This is the function that will get executed after the DOM is fully loaded */
   function () {
+  	console.log(is_it_true);
     $(function() {
        $("#From").datepicker({ dateFormat: "dd.mm.yy" }).val()
        $("#To").datepicker({ dateFormat: "dd.mm.yy" }).val()
     });
-    $(".SubmitMessage").hide();
-    $(".LoginReplacement").hide();
+    if(is_it_true == false) {
+    	$(".SubmitMessage").hide();
+    	$(".LoginReplacement").hide();
+    }
+    else {
+			 $(".hidethis").hide();
+			 $(".LoginReplacement").append($("#username").val());
+			 $(".LoginReplacement").show();
+		}
   }
  
   
@@ -79,9 +90,14 @@ $(function() {
 		  }
 		 })
 	})
-	$(".Login").on("click", function() {
+	$("#btnlogin").on("click", function() {
 			console.log("hell123123o");
-			 $(".Login").hide();
+		if(is_it_true == false) {
+			is_it_true = true;
+			 $(".hidethis").hide();
+			 $(".LoginReplacement").append($("#username").val());
 			 $(".LoginReplacement").show();
+			 console.log(is_it_true);
+		}
 	})
 });
