@@ -91,11 +91,10 @@ $(function() {
 		 })
 	})
 	$("#btnlogin").on("click", function() {
-			console.log("hell123123o");
 		if(is_it_true == false) {
 			is_it_true = true;
 			 $(".hidethis").hide();
-			 $(".LoginReplacement").append($("#username").val());
+			 $(".LoginReplacement").append("Login er í vinnslu");
 			 $(".LoginReplacement").show();
 			 console.log(is_it_true);
 		}
